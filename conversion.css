@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    font-family: sans-serif, karla;
+}
+
+h1 {
+    background: #FFC600;
+    font-size: 1.563rem;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    height: 6vh;
+    padding-top: 0.12em;   
+}
+
+/* Conversion section */
+.conversion-group {
+    display: flex;
+    flex-direction: column;
+    background: #37373D;
+    height: 20vh;
+}
+
+#input {
+    background: #181818;
+    font-size: 1.25rem;
+    width: 45%;
+    height: 30%;
+    color: #b1afaf;
+    text-align: center;
+    margin: 1.5em auto 0;
+    padding: 10px;
+    border: none;
+    border: 0.25em solid #6c6c72;
+    border-radius: 0.5em;
+}
+
+#conversion-btn {
+    background: #181818;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1.25em auto;
+    padding: 0.625em 0.938em;
+    border: none;
+    border-radius: 0.625em;
+    color: #FFC600;
+    box-shadow: 0 0.063em 0.625em 0.063em #8b8b8f;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+/* Conversion display section */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4.375rem 0;
+}
+
+.display-box {
+    flex: 1;
+    font-size: 1.25rem;
+    padding: 0 1em;
+    margin: 1.5em 0;
+    color: #b1afaf;
+    font-weight: 700;
+}
+
+#display-metre, #display-feet {
+    background: #37373D;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 0.1em;
+    padding: 0.9em 0.5em;
+    width: 100%;
+    color: #b1afaf;
+    border: none;
+    border-radius: 0.25em;
+}
+
+/* Navigation menu section  */
+.menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.625em;
+    background: #37373D;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items h5 {
+    text-align: center;
+    color: #cccbcb;
+    margin-top: 0.125em;
+}
+
+.item .fa-solid {
+    color: #FFC600; /*#F0C711*/
+    font-size: 1.75rem;
+}
+
+.item .fa-solid:hover {
+    color: #cccbcb;
+}

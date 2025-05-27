@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6)), url("./images/ironbending.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 62vh;
+    font-family: sans-serif, karla;
+    background-color: #181818;
+    color: #f7f5f5;
+}
+
+/* Header section */
+h1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background:#FFC600;
+    font-size: 1.563rem;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    height: 6vh; /*45px*/
+    padding-top: 0.12em;
+}
+
+/* Input section */
+.quotation {
+    color: #cccbcb;
+    margin-bottom: 1.563rem;
+    height: 13.333vh; /*100px*/
+    margin: 0 0.625rem 2.813rem;
+}
+
+.quotation,
+.client-input-name, 
+.input-quotation,
+.textarea-quotation {
+    position: fixed;
+    bottom: 0;
+}
+
+.client-input-name {
+    display: block;
+    padding: 0 1.176em 0 0;
+    margin-bottom: 12.059em;
+}
+
+.client-input-name, .input-group  {
+    font-size: 1.063rem;
+
+}
+
+.client-input-name, 
+#client-input-name,
+.input-quotation,
+#client-input-name, 
+#unit-price, 
+#material-quantity,
+.textarea-quotation, 
+#textarea {
+    width: 100%;
+}
+
+#client-input-name {
+    flex: 1;
+    padding: 0.471em;
+}
+
+.input-quotation {
+    display: flex;
+    padding: 0.625rem 0.625rem 0 0;
+    margin-bottom: 10.5rem;
+    gap: 1.875rem;
+}
+
+.input-group {
+    flex: 1;
+    padding: 0.588em 0.588em 0.588em 0;
+}
+
+.input-group,
+#textarea, 
+#send-quotation {
+    height: 5.333vh;
+}
+
+#client-input-name, 
+#unit-price, 
+#material-quantity {
+    margin-top: 0.125rem;
+    padding: 0.625rem;
+}
+
+#client-input-name, 
+#unit-price, 
+#material-quantity, 
+#textarea {
+    background: #37373D;
+    color: #e0dcdc;
+    border: none;
+    border-radius: 0.313rem;
+}
+
+::placeholder {
+    font-family: sans-serif, karla;
+    font-size: 0.938rem;
+    color: #8f8f92;
+}
+
+.textarea-quotation {
+    display: flex;
+    padding: 0.625rem 0.625rem 0 0;
+    align-items: flex-end;
+    margin-bottom: 4.689rem;
+}
+
+#textarea {
+    flex: 1;
+    bottom: 0;
+    resize: none;
+    font-family: sans-serif, karla;
+    max-height: 3.125em;
+    overflow-y: auto;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+#send-quotation {
+    margin:0 0.625em;
+    padding: 0 1em;
+    font-size: 1rem;
+    background: #37373D;
+    border: none;
+    border-radius: 1.25em;
+}
+
+
+.fa-paper-plane {
+    color: #FFC600;
+    font-size: 1.25rem;
+    padding: 0.25em;
+}
+
+/* Navigation menu section */
+.menu {
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.625rem;
+    background: #37373D;
+}
+
+.menu, .menu-items {
+    display: flex;
+}
+
+.menu-items {
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items h5 {
+    font-weight: normal;
+    text-align: center;
+    color: #cccbcb;
+    margin-top: 0.125rem;
+}
+
+.item .fa-solid {
+    color: #FFC600;
+    font-size: 1.75rem;
+}
+
+.item .fa-solid:hover {
+    color: #cccbcb;
+}
+
+
+/* Displayed Table Section */
+
+.quotation-area {
+    flex-direction: column;
+    height: calc(100vh - 17.6rem);
+    margin-bottom: 0.625rem;
+}
+
+.table-container {
+    flex-direction: column-reverse;
+}
+
+.quotation-area, .table-container {
+    display: flex;
+    overflow-y: auto;
+}
+
+.table-container, 
+.delete-btn,
+#client-name,
+.summary,
+#save-quotation {
+    background: #181818;
+}
+
+table {
+    margin: 0 0.714em;
+    border-collapse: collapse;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+table, 
+#save-quotation,
+#delete-quotation {
+    font-size: 0.875rem;
+}
+
+table, .total {
+    color: #FFFFFF;
+}
+
+th, td {
+    border: 0.125rem solid #FFC600;
+    padding: 0.063rem;
+    box-sizing: border-box;
+}
+
+th {
+    font-size: 1rem;
+}
+
+td {
+    position: relative;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+#delete-column {
+    color: #FF0000;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border: 0.125em solid #FFC600;
+    border-radius: 0.438em;
+    color: #FF0000;
+}
+
+#client-name {
+    font-size: 1.125rem;
+    margin: 2.222em 0 0;
+    padding: 0.833em 0.556em 0.556em;
+    color: #FFC600;
+}
+
+.summary {
+    position: relative;
+    font-size: 1.063rem;
+    margin: 0 0 0.294em;
+    padding: 0.588em 0.588em 0.294em;
+    color: #FFC600;
+}
+
+.summary h4 {
+    padding-bottom: 0.263em;
+    font-size: 1.188rem;
+    text-decoration: underline;
+
+}
+
+.total-el {
+    padding-top: 0.176em;
+}
+
+.total {
+    margin-left: 0.588em;
+}
+
+#contact {
+    font-size: 0.813rem;
+    color: #6c6c72;
+}
+
+#save-quotation {
+    position: absolute;
+    bottom: 2.188rem;
+    right: 0;
+    color: #FFC600;
+    border: none;
+    border-radius: 1.429em;
+    box-shadow: 0 0.143em 0.286em 0.071em #6c6c72;
+    margin-right: 0.357em;
+    padding: 0.5em 0.857em;
+    cursor: pointer;
+}
+
+#save-quotation:hover {
+    background: #FFC600;
+    color: #FFFFFF;
+    text-shadow: 0.071em 0.071em 0.071em #FFC600;
+}
+
+#delete-quotation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FF0000;
+    color:white;  
+    border:none; 
+    margin: 1.071em 0.357em;
+    border-radius: 1.429em;
+    padding: 0.5em 0.571em; 
+    cursor:pointer;
+    box-shadow: 0 0.143em 0.286em 0.143em #6c6c72;
+}
+
+#delete-quotation:hover {
+    background: #FFFFFF;
+    color: #FF0000;
+} 
+
+.fa-phone, .fa-whatsapp {
+    font-size: 1.125rem;
+    padding-top: 0.278em;
+    color: green;
+}
+
+.fa-whatsapp {
+    padding-left: 0.625em;
+}

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    font-family: sans-serif, karla;
+}
+
+/* Header section */
+h1 {
+    background:#FFC600;
+    /* background:#F7DC00; */
+    font-size: 1.563rem;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0.12em 0.08em 0.2em;   
+}
+
+/* About section */
+.about {
+    font-size: 1.063rem;
+    line-height: 1.2;
+    border: 1px solid #6c6c72;
+    box-shadow: 0 0 0.588em 0.059em #6c6c72;
+    margin: 1.176em 1.176em 5rem;
+    padding: 0.588em;
+    color: #cccbcb;
+}
+
+#about-greeting {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #b19621;
+}
+
+#about-description {
+    margin-top: 0.294em;
+}
+
+#about-developer {
+    border-top: 0.059em solid #6c6c72;
+    padding-top: 0.412em;
+    margin-top: 0.588em;
+}
+
+#about-developer-name {
+    display: block;
+    margin-bottom: 0.294em;
+    font-weight: 800;
+    color: #b19621;
+}
+
+.emphasis {
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    margin-top: 0.625em;
+}
+
+#emphasis {
+    font-size: 1.063rem;
+    color: #b19621;
+}
+
+/* Navigation menu section */
+.menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.625em;
+    background: #37373D;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items h5 {
+    font-weight: normal;
+    text-align: center;
+    color: #cccbcb;
+    margin-top: 0.125em;
+}
+
+.item .fa-solid {
+    color: #FFC600;
+    font-size: 1.75rem;
+}
+
+.item .fa-solid:hover {
+    color: #cccbcb;
+}

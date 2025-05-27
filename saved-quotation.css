@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: #181818;
+    font-family: sans-serif, karla;
+    color: #f7f5f5;
+}
+
+/* Header */
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background:#FFC600;
+    font-size: 1.563rem;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+    height: 6vh;
+    padding-top: 0.12em;
+}
+
+/* Saved quotation section */
+.saved-quotation {
+    position: relative;
+    margin: 3.75rem 0.625rem;
+    padding: 0.313rem 0.313rem 0.625rem;
+    border: 0.063rem solid #6c6c72;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.313rem 0.938rem 0.063rem #6c6c72;
+
+}
+
+#delete-quotation-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FF0000;
+    color:white;  
+    border:none; 
+    margin: 0.625rem;
+    padding: 0.313rem 0.625rem; 
+    cursor: pointer;
+}
+
+table {
+    background: #181818;
+    color: #FFFFFF;
+    margin: 0 0.357em;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+th, td {
+    border: 0.143em solid #FFC600;
+    padding: 0.071em;
+    box-sizing: border-box;
+}
+
+th {
+    font-size: 1rem;
+}
+
+td {
+    position: relative;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+#client-name {
+    font-size: 1.125rem;
+    margin: 0 0 0.278em;
+    padding: 2.222em 0.278em 0.167em;
+    color: #FFC600;
+}
+
+/* Quotation suummary section */
+.summary {
+    font-size: 1.063rem;
+    margin: 0.588em 0 0.263em;
+    padding: 0 0.263em;
+    color: #FFC600;
+}
+
+.summary h4 {
+    padding-bottom: 0.294em;
+    font-size: 1.188rem;
+    text-decoration: underline;
+
+}
+
+.summary p {
+    padding-top: 0.059em;
+}
+
+.total-el {
+    padding-top: 0.176em;
+}
+
+.total {
+    margin-left: 0.588em;
+    color: #FFFFFF;
+}
+
+#contact {
+    font-size: 0.765rem;
+    color: #6c6c72;
+}
+
+.fa-phone, .fa-whatsapp{
+    font-size: 1.125rem;
+    padding-top: 0.278em;
+    color: #008000;
+}
+
+.fa-whatsapp {
+    padding-left: 0.556em;
+}
+
+#date {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+strong {
+    color: #FFC600;
+    font-size: 0.875rem;
+    margin: 0.357em;
+    font-style: normal;
+}
+
+/* Navigation menu section */
+.menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.625rem;
+    background: #37373D;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items h5 {
+    font-weight: normal;
+    text-align: center;
+    color: #cccbcb;
+    margin-top: 0.125rem;
+}
+
+.item .fa-solid {
+    font-size: 1.75rem;
+    color: #FFC600;
+}
+
+.item .fa-solid:hover {
+    color: #cccbcb;
+}
