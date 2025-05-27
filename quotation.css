@@ -188,7 +188,7 @@ h1 {
 
 .quotation-area {
     flex-direction: column;
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 20.3rem);
     margin-bottom: 0.625rem;
 }
 
